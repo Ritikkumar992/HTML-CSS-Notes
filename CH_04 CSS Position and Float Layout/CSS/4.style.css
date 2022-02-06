@@ -1,0 +1,9 @@
+/* we consider parent in case of em */
+h1{
+    font-size: 2em; /* 1em == 16px*/
+    border: 2em solid black; /*here border consider font-size as defalt value and border = 64px*/
+    padding: 3em; /* here padding becomes 96px*/
+}
+.box1{
+    font-size: 20px;
+}

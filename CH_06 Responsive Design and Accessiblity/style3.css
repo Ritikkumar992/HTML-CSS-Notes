@@ -1,0 +1,28 @@
+/* media query when we wish to print something */
+@media print{
+    body{
+        color: blue;
+    }
+}
+
+/* media query when we wish to print something */
+@media print{
+    body{
+        color: blue;
+    }
+}
+
+/* media query when we wish to see our page in desktop */
+@media screen and (max-width:500px){
+    body{
+        color: blue;
+    }
+}
+
+/* media query when we wish to see our page in any viewPort */
+@media all and (max-width:500px){
+    body{
+        color: blue;
+    }
+}
+

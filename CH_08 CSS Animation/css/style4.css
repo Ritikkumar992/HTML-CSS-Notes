@@ -1,0 +1,48 @@
+.box{
+    width: 100px;
+    height: 100px;
+    font-size: 1.5rem;
+    background-color: brown;
+    margin: 100px auto;
+    text-align: center;
+
+    /* Transition Properties: */
+    /* 1. Rotate: + -> clockwise rotation and - -> anticlockwise rotation */
+
+    /* transform: rotate(60deg); */
+    transition: transform 2s ease-out;
+
+    /* 2. Scale:to grow the element
+    ScaleX --> scaling of width 
+    ScaleY --> scaling of height
+    Scale --> scaling of both height and width */
+
+    /* 3.Translate: to change the position 
+    tranlateX --> change position  of width 
+    tranlateY --> change position  of height
+    tranlate --> change position of both height and width*/
+    
+
+    /* 4. Skew: to skew our element */
+
+    /* NOte:: if we wish to change the default transfom origin we can do as mentioned below:*/
+    transform-origin: top left;
+    transform-origin: top right;
+
+}
+
+.box:hover{
+    transform: rotate(60deg);
+    transform: ScaleX(2);
+    transform: scaleY(2);
+    transform: scale(1.25, 2);
+
+    transform: translateX(50px); /*it moves 50px from centre to the right bcz it has centre as its origin*/
+    transform: translateX(-50px); /*it moves 50px from centre to the left  bcz it has centre as its origin*/
+    transform: translate(100px, 50px);
+
+    transform: skewX(90deg); /*skew along x-axis*/
+    transform: skewY(90deg); /*skew along y-axis*/
+    transform: skew(40deg 50deg); /*skew along y-axis*/
+}
+

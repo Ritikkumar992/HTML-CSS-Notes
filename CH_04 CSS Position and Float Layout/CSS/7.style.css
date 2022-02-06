@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+.fac_musicians{
+    border: 10px solid green;
+}
+.mozart{
+    width: 25%;
+    float:left;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+.box{
+    clear:both;
+}
+.beethoven{
+    width:25%;
+    float: left;
+    background: blueviolet;
+    padding: 20px;
+}
+.bach{
+    width: 25%;
+    float: left;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+.paganini{
+    width: 25%;
+    float: left;
+    background-color: aquamarine;
+    padding: 20px;
+    
+}
+
+.clearfix{
+    clear:both;/*clear the left most portion of the  the seciton */
+}
+
+/* Another way to clear both the sides: it is more prefered since it doesn't affect our html code */
+.fac_musicians::after{
+    content: "";
+    display: block;
+    clear: both;
+}

@@ -1,0 +1,18 @@
+h1{
+    border: 2px ridge blue;
+    /* width: 500px;  it may be possible it doesn't suits for mobile viewPort */
+    /* The area which is visible from the user point of view is know as ViewPort */
+
+    width: 50vw; /* it simply gives the 50% width of our viewPort*/
+
+}
+.box{
+    border: 4px solid red;
+    padding: 5px;
+    height: 100vh;/* it take the whole height of our viewport */
+    background-color: rgb(46, 199, 226);
+
+    height: 100vmin; /*it ensures that it takes the 100% of min(vh, vw)*/
+    height: 100vmax; /*it ensures that it takes the 100% of max(vh, vw)*/
+}
+/* % or px cares about parents but vw only cares about viewport */

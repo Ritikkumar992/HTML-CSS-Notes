@@ -1,0 +1,41 @@
+/* header{
+    background-color: rgb(217, 224, 236);
+} */
+main{
+    background-color: rgb(114, 141, 187);
+}
+
+section.my_article{
+    background-color: rgb(248, 147, 243);
+}
+
+/* Universal Selector */
+*{
+    color: blue;
+}
+/* header ke ander ka paragraph ko red krv  i.e descedent selector */
+header p{
+    color: red;
+}
+
+li a{
+    color: green;
+}
+/* section.my-article -> this denote that particular class of section */
+section.my_article h2{
+    color: aqua;
+}
+
+/* This indicates the nearest h2 of section.my_article i.e direct child combination */
+section.my_article > h2{
+    color: black;
+}
+/* changes all those paragrapgh which comes just after h2 */
+h2+p{
+    color: aquamarine;
+}
+
+/* changes all those paragraph which comes just after unordered list  */
+ul+p{
+    color: rgb(183, 0, 255);
+}

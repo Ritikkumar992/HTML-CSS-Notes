@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>HTML FORMS</h1>
+    <form action="4.linkingFile.html" method='GET'>
+        <!-- Username bar is created -->
+        <label for="username">Username:</label>
+        <input type="text" id = "username" name = "username" placeholder="Enter your username" required>
+
+        <br><br>
+        <!--Password bar is created -->
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter Your Password" required>
+
+        <br><br>
+        <!--Email address bar is created -->
+        <label for="email">Email:</label>
+        <input type="email"  id="email" name = "email"placeholder="Enter your Email" required>
+
+        <br><br>
+
+        <!-- creating radio button for gender -->
+        <!-- Note : in radio button we wisht to tick only one radio button out of given 
+        radion buttons then in that case we wish to use same name -->
+        <p>Select your gender</p>
+        <label for="male">Male</label>
+        <input type="radio" name = "gender" id="male" value="Male"> <br>
+        <label for="female">Female</label>
+        <input type="radio" name = "gender" id="female"value="Female"> <br>
+        <label for="others">Others</label>
+        <input type="radio" name = "gender" id="others"value="Others"> <br>
+
+        <!-- DropDown List -->
+        <label for="age">Select your age</label>
+        <select name="age_group value" id="age">
+            <option value="5-10">5-10</option>
+            <option value="10-20">10-20</option>
+            <option value="30-45">30-45</option>
+            <option value="45 above">45 above</option>
+        </select> <br>
+
+        <!-- creating submit button -->
+        <input type="submit" value="Submit">
+
+        <br><br>
+
+        
+
+        <!-- Action attribute -->
+        <!-- give information regrading what happens after summiting our form -->
+
+        <!-- Name attribute -->
+        <!--  -->
+        <!-- Method attribute -->
+        <!-- get method is used is used to get data in our url  -->
+
+        <!-- placeHolder Attribute -->
+        <!-- give us a dim suggestion to our username -->
+
+        <!-- Require Attribute -->
+        <!-- It ensure that each and every block must be filled if it is not we can't 
+        able to submit our form. -->
+
+        <!-- Radion Button -->
+        <!-- used to check the box or to chooose one option amongs the others -->
+
+        <!-- DropDown List -->
+        <!-- used to check the box or to chooose one option amongs the others in drop down manner-->
+
+        <!-- Some more HTML elements: -->
+        <!-- Text area -->
+        <p>Comment Below</p>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Type here..."></textarea>
+        <br>
+
+        <!-- Color: -->
+        <label for="">Pick color</label>
+        <input type="color" name="" id="">
+        <br><br>
+
+        <!-- Date -->
+        <label for="">Choose Your Date of Birth</label>
+        <input type="date" name="" id="">
+        <br><br>
+
+        <!-- file -->
+        <label for="">Upload your file</label>
+        <input type="file" name="" id="">
+
+
+    </form>
+
+</body>
+</html>

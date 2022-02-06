@@ -1,0 +1,14 @@
+div{
+    border: 2px solid red;
+    font-size: 60px;
+    width: 50%;
+}
+p{
+    border: 2px ridge black;
+    width: 50%;
+    font-size: 100%;/* equivalent to defaut size i.e 16px*/
+    font-size: 200%;/*equivalent to doubel of defaut size i.e 32 px*/
+    background-color: lightblue;
+    margin: auto;
+    text-align: center;
+}

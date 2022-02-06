@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Block level element */
+h1,h2{
+    border: 2px solid #222;
+    width:500px;
+    height: 200px;
+
+    /* it is used to display block level element in inline fasion */
+    display: inline;
+}
+h1{
+    /* in block level element : margin is applid top, right, bottom, left manner */
+    margin: 100px; 
+    /* in block level element : padding is applid top, right, bottom, left manner */
+    padding: 100px;
+}
+/* inline element */
+a{
+    border: 2px solid rgb(13, 156, 240);
+    /* there is no impact on the width and height */
+    width: 100px;
+    height: 100px;
+    /* in inline level element : margin is applid left,right  manner */
+    margin: 100px;
+    /* in inline level element : padding is applid properly in left,right but mess up with top & bottom manner */
+    padding: 0px 50px;
+
+    /* it is used to display inline level element in block fasion */
+    display: block;
+    
+    padding: 50px;
+    margin: 50px 10px;
+}
+

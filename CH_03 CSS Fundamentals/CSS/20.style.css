@@ -1,0 +1,24 @@
+hr{
+    width: 500px;
+    color: red;
+    margin-left: 0;
+    border: 5px dotted black;
+}
+.box2{
+    box-sizing: border-box;/* This ensures that  width of box is fixed and doesn't change */
+    /* with width or border or padding or margin*/
+    /* box-sizing: content-box; This ensures that  width of box is not  fixed and does change 
+    /* with width or border or padding or margin*/
+    width: 500px;
+    background-color: lightcoral;
+    border: 10px solid red;
+    padding:100px;
+    margin: 10px;
+}
+/* here width of bordere chages with change in width or border or padding or something else */
+.box1{
+    width: 500px;
+    background-color: lightcoral;
+    border: 10px solid red;
+    padding:100px; 
+}

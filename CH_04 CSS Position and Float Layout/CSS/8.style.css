@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 800px;
+    height: 500px;
+    border: 8px ridge green;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.container h1{
+    border: 4px solid red;
+    background: lightblue;
+    /* position: static; set as default by our browser */
+    /* position: relative;it helps to move the element from their actual position */
+    /* top: 50px; move 50px top form the actual position */
+    /* z-index: -1; it specifies the stack order of the element */
+
+    position: absolute; /* it comes out of the documentation page */
+    top:50%;/*and then it changes its postion considering its whole html page */
+    left: 50%;
+    transform: translate(-200%, -100%);
+}
+.container h3{
+    background-color: black;
+    color: #fff;
+    position: fixed;/*it gives the fixed positon of the element and doesn't chagne inspite of scrolling our web page*/
+    top:0;
+    /* bottom:0px; */
+
+    position: sticky; /*it behaves as fixed when top reahes 0px and behaviour is show in his parent class only */
+    /*if we wish to make it fixed we need to declare it outside the div */
+    top: 0px;
+}
+.container p{
+    border: 4px solid purple;
+    background-color: lightgray;
+}

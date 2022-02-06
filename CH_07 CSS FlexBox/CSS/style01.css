@@ -1,0 +1,34 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box_container{
+    border: 4px solid red;
+
+    /* way to make our box_container as flexConatainer */
+    display: flex;
+    /* by doing so all our box1,box2... becomes flexItems and they automatically align itself  */
+}
+.box{
+    border: 1px solid gray;
+}
+.box1{
+    background: rgb(94, 94, 93);
+}
+.box2{
+    background: rgb(255, 187, 62);
+}
+.box3{
+    background: rgb(68, 171, 255);
+}
+.box4{
+    background: rgb(110, 119, 243);
+}
+.box5{
+    background: lawngreen;
+}
+
+img{
+    width: 70%;
+    height: 50%;
+}

@@ -1,0 +1,39 @@
+div#container ul.my_songs li{
+    background-color: yellow;
+    color: red;
+}
+/*
+0                    1              1                 3 ---->    specificity : 113
+_____________, _____________, _______________, __________________
+*/
+
+.Favorite{
+    background-color: red;
+    color: yellow;
+}
+/*
+0                    0              1                 0 ----->   Specificity : 10   
+_____________, _____________, _______________, __________________
+*/
+
+div#container ul.my_songs li.Favorite{
+    background-color: red;
+    color: yellow;
+}
+/*
+0                    1              2                  3  ----->   Specificity : 123   
+_____________, _____________, _______________, __________________
+*/
+
+
+/* How to calculate Specificity :Count the no of below elements:
+
+Inline style > Id selector > Class Selector > Element Selector
+
+0                    1              1                 3  ---->    specificity : 113
+
+0                    0              1                 0   ---->   Specificity : 10   
+
+0                    1              2                  3  ----->   Specificity : 123   
+_____________, _____________, _______________, __________________
+ */

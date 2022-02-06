@@ -1,0 +1,24 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+
+    /*  CSS transitions allows you to change property values smoothly, over a given duration. */
+    transition-property: background;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+
+    /* one more way to do so. */
+    transition:background 1s ease-in-out, width 1s ease-in height 1s ease-out;
+
+    /* one more way to do so.. */
+    transition: all 1s ease-in;
+
+}
+
+.box:hover{
+    background-color: blueviolet;
+    width: 200px;
+    height: 50px;
+}

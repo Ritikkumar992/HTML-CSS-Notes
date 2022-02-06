@@ -1,0 +1,93 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box_container{
+    border: 4px solid red;
+
+    height: 400px;
+    width: 400px;
+    /*###################### Flex Container ###############################*/
+    /* way to make our box_container as flexConatainer */
+    display: flex;
+    /* by doing so all our box1,box2... becomes flexItems and they automatically align itself  */
+
+    /* ######### Flex direction Property################## */
+    /* flex-direction: row; By default flexDirection is Row wise i.e main axis moves left to right */
+    /* flex-direction: row-reverse; It reverse the default flexDirection  i.e main axis moves right to left */
+    /* flex-direction: column; main axis moves top to buttom */
+    /* flex-direction: column-reverse; it reverse the  main axis i.e it  moves bottom to top */
+
+    /* ######################### Flex Wrap Propery ###################################### */
+    /* flex-wrap: wrap; */
+    /*flex-wrap: wrap-reverse; */
+
+    /* ################ Flex Justify content##############*/
+    /* justify-content: flex-start;/*shift our flex item at the start*/
+    /* justify-content: flex-end;shift our flex item at the end */
+    /* justify-content: center; shift our flex item at the centre */
+    /* justify-content: space-between; add space between our flex item */
+    /* justify-content: space-around; add space between our flex item with the corner also */
+    /* justify-content: space-evenly;add space between our flex item with the same spce */
+
+    /* flex-direction: column; */
+
+    /* ######### Align Items ################## */
+
+    /* align-items: stretch; by default items are aligned stretch */
+    /* align-items: flex-start; items move to the start of the body */
+    /* align-items: flex-end;items move to the end of the body */
+    /* align-items: center;items move to the centre of the body */
+
+    /* ################# Align Content ############################ */
+    /* Works on the cross axis part  */
+    /* align-content: space-between; */
+
+    /*  ###################### Flex- flow : flex-direction + flex-wrap ########### */
+    /* flex-flow: row wrap; flex-direction = row and  flex-wrap = wrap */
+    /* flex-flow: column wrap-reverse; flex-direction = column and  flex-wrap = wrap-reverse */
+
+
+    /* ######################### Flex-item Property : Align Self ############## */
+    /*This property overrides the property of align item */
+
+    /* ######################### Flex-item Property : Order Property ############## */
+    /* By defalut order is 0. */
+    /* Greater order appears at the last and the least one appears at the first  */
+
+    /* ######################### Flex-item Property : flex-basic Property ############## */
+
+
+    /* ######################### Flex-item Property : flex-Grow Property ############## */
+    
+
+}
+.box{
+    border: 1px solid gray;
+    width: 500px;
+    /* width: 300px; just to illustrate flex-wrap property */
+}
+.box1{
+    background: rgb(94, 94, 93);
+    align-self: center;
+    order: 0;
+}
+.box2{
+    background: rgb(255, 187, 62);
+    align-self: flex-end;
+    flex-basis: 500px;
+    order: 1;/*box2 appears last */
+}
+.box3{
+    background: rgb(68, 171, 255);
+    align-self: flex-start;
+    order: 2; /*box3 appears after box2 */
+}
+.box4{
+    background: rgb(110, 119, 243);
+    align-self: flex-end;
+}
+.box5{
+    background: lawngreen;
+    align-self: flex-end;
+}

@@ -1,0 +1,17 @@
+/*it select the 2nd child of parent */
+p:nth-child(2){
+    color: green;
+}
+
+/* it select the every 2nd child of parent here n denotes the natural no : 0,1,2,3,...*/
+ p:nth-child(2n){
+    color: green;
+}
+p:nth-child(2n+1){
+    color: teal;
+}
+
+/* each  parent ka jo 2nd paragraph h usko black krna h */
+p:nth-of-type(2){
+    color: black;
+}

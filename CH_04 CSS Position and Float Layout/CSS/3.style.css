@@ -1,0 +1,19 @@
+html{
+    font-size: 10px;
+
+    /* font-size : 62.5% is prefred instead of 10px bcz if we wish to change the setting of our
+    browser it doesn't respond to 10px but it does with 62.5 % */
+
+    /* 16px  ---> 100% */
+    /* 10px ---> 100/16*10 = 62.5% */
+}
+/* 1 rem is equivalent to defalut font size of html or .root code */
+.box1{
+    font: size 3rem; 
+}
+.text_content{
+    font-size: 3rem;
+    border: 1px ridge blue;
+    margin:0.5rem;
+    padding: 4.5rem;
+}

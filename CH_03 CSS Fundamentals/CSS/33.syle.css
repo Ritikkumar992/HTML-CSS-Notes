@@ -1,0 +1,26 @@
+.cool::before{
+    content: 'hello ';
+    color: green;
+    border: 3px  ridge red;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.cool::after{
+    content: 'hello ';
+    color: green;
+    border: 3px  ridge red;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.main_heading::before{
+    content: 'hello ';
+    color: green;
+    border: 3px  ridge red;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+/* before and after are not used in img, br, input ... */
+img::after{
+    content: 'how are you !!';
+}

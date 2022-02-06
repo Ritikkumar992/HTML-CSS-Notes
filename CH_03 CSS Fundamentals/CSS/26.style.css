@@ -1,0 +1,25 @@
+/* <!-- Here we talk about 4 pseudo classes -->
+<!-- link, visited, hover, active  --> */
+/* here we are just using simple element selector , we can use any selector like id, classes */
+
+/* Note : link -> visite -> hover -> active , they must be is that particular sequence */
+
+a:link{
+    color: red;
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    color: blue;
+}
+a:active{
+    color: black;
+}
+/* The above mentioned classes are applicable to paragraph also. */
+p:hover{
+    color: green;
+}
+p:active{
+    background-color: antiquewhite;
+}

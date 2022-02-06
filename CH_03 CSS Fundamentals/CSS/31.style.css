@@ -1,0 +1,45 @@
+/* The :not() CSS pseudo-class represents elements that do not match a list of selectors.
+Since it prevents specific items from being selected, it is known as the negation pseudo-class. */
+/* The :not() pseudo-class has a number of quirks, tricks, and unexpected results that you should 
+be aware of before using it. */
+
+
+/* body ke ander jo paragraph nhi usko blue krna h  i.e we need to color our heading */
+body :not(p){
+    color:rgb(0, 224, 168);
+}
+/* body ke ander jo paragraph fancy nhi usko blue krna h */
+body :not(p.fancy){
+    background-color: rgb(255, 184, 255);
+    color:rgb(255, 87, 75);
+}
+
+/* Empty Pseudo Classes:is used to provide features to our empty entitiy */
+div:empty{
+    background-color: black;
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+}
+
+/* Root pseudo classes : is similar to our main html page */
+/* root is used to make variables of css  */
+:root{
+    background:rgba(119, 119, 119, 0.589);
+    color: rgb(2, 2, 2);
+}
+
+/* is same as :root but still root have more specificty than html{...} */
+html{
+    background-color: red;
+    color: wheat;
+}
+
+/* but we don't use :root or html to change the background or change the text of our html page */
+/* is same as :root and html but still body have more specificty than html and root{...} */
+
+/* Specificity: body > html > root  */
+body{
+    background:blue;
+    color: antiquewhite;
+}

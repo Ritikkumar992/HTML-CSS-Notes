@@ -1,0 +1,16 @@
+h1{
+    font-size: 16px;
+    text-decoration: underline wavy red; /*underline our heading with solid red color*/
+    text-decoration: line-through solid red; /*line through our heading with solid red color*/
+}
+/* font-size increases the size of our width */
+/* TEXT-decoration helps to decorate our text */
+/* line-height denotes the distance between two consecutive lines */
+/* word-spacing denotes the distance between two words */
+/* word-spacing denotes the distance between two letter */
+p{
+    font-size: 20px;
+    line-height: 30px; /*increases the height between our lines */
+    word-spacing: 10px; /*increase the space between our words*/
+    letter-spacing: 2px; /*increase the space between our letters*/
+}

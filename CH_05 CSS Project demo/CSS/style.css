@@ -1,0 +1,604 @@
+/* reseting our default browser setting */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* changing the defalut font size for our convineince */
+html{
+    /* font-size: 10px;  16px == 100%  then 10px == 62.5%*/
+    font-size: 62.5%;
+}
+
+/* changing the font-family of our website */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:ital,wght@0,300;0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;1,100;1,400;1,900&family=Rock+3D&family=Vujahday+Script&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;;
+}
+
+/* changing the backgound img of our website */
+.header{
+    height: 99vh;
+    /* linear - gradient is used to lower down the brightness of our web page ans url: img link */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/header-image.jpg');
+    background-position: center;
+    background-size: cover; /*zoom in and zoom out doesn't affect the img resolution*/
+    background-repeat: no repeat;/*zoom in and zoom out doesn't affect the img resolution*/
+    position: relative;
+}
+
+
+/*####################### Navigation Bar styling ##################################*/
+
+.navbar{
+    /* border: 2px solid white; */
+    padding: 1rem;
+}
+
+/* giving white color to our logo and links  */
+/* .header .logo , .header .navbar a{
+    color: white;
+} */
+
+/* move logo to the left */
+.navbar .logo{
+    float: left;
+    font-size: 3.5rem;
+}
+/* move nav items to the rights */
+.navbar .nav_items{
+    float: right;
+    margin-top: 1rem;
+}
+
+/* restore the original border of our nav bar */
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* convert all block item into inline-block so that to fulfil our requirement */
+.navbar .nav_item{
+    display: inline-block;
+    padding: 1rem;      /* padding of 1rem is provided */
+    text-transform: uppercase; /*convert our nav item to upper case*/
+}
+
+/* Pseudo class to color link  */
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+}
+
+/* padding for hover class */
+.navbar a{
+    padding-bottom: 0.4rem;
+}
+/* Pseudo class to hover the link */
+.navbar a:hover{
+    border-bottom: 1px solid #f4f4f4;
+}
+
+ul li{
+    list-style: none; /* list style set to be none*/
+
+}
+a{
+    font-size: 1.6rem; /* 1.6 rem == 16 px*/
+    text-decoration: none; /*underline gets removed*/
+}
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em; /*gives 50% margin-bottom of our font-size*/
+    letter-spacing: 0.15em;/*gives 15% letter-spacing of our font-size*/
+}
+
+/* few modification to our heading  */
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+/* ############################### Header Content Styling  ################################## */
+.header_content h1,p{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+/* Centre things in css */
+.header_content{
+    /* border: 2px solid #f4f4f4; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50% ,-50%);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+
+}
+
+/* ###################### Utility Classes ################################### */
+
+/* classes for container :IMPORTANT */
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+/* classses for higher heading */
+.lg_heading{
+    font-size: 3.5rem;
+}
+/* classses for meadium heading */
+.md_heading{
+    font-size: 2.5rem;
+}
+/* classes to make our text colorful */
+.text_red{
+    color: #e63946;
+}
+.text_light{
+    color: #f4f4f4;
+}
+.text_black{
+    color:#333333;
+}
+.text_gray{
+    color: #555;
+}
+
+.bg_dark{
+    background: #263238;
+}
+
+
+/* classes for button  */
+.button{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+/* giving effect to our secondary button */
+.button_primary{
+    background-color: #f4f4f4;
+    border-radius: 10em;
+}
+/* giving effect to our secondary button */
+.button_secondary{
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    background: #f4f4f4;
+}
+
+/* button hover property */
+.button_primary:hover{
+    background-color: #dddddd;
+}
+.button_secondary:hover{
+    background-color:  #ffe9e7;;
+}
+
+
+/*  <!-- ################## ShowCase Section Styling ###################### --> */
+
+/* giving background and padding to our showcase section  */
+.showcase{
+    background: #dddddd;
+    padding: 10rem 0;
+}
+
+/* giving height and border to our row  */
+.row{
+    height: 350px;
+    /* border: 2px solid red; */
+    background-color: rgb(252, 231, 231);
+    box-shadow: 0px 0px 20px 0px rgb(121, 118, 118); /*it is used to vizaulise it as a 3d row*/
+}
+
+/* provides margin between two row  */
+.row1{
+    margin-bottom: 10rem;
+}
+
+/* img box of row1 and text box of row2 are left aligned */
+.row1 .img_box, .row2 .text_box{
+    float: left;
+    width: 50%;
+}
+
+/* text box of row1 and img box of row2 are right aligned */
+
+.row2 .img_box, .row1 .text_box{
+    float: right;
+    width: 50%;
+}
+
+/* creating border for img box and text box for our convinince */
+
+.row .img_box{
+    /* border: 3px solid rgb(9, 145, 236); */
+    height: 100%;
+}
+.row .text_box{
+    /* border: 3px solid rgb(110, 107, 90); */
+    padding: 3rem;
+}
+
+/* we try to give 100% of heigth and width to our img */
+.row .img_box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/* it is used to maintain the aspect view of our web page*/
+
+}
+
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/*  <!-- ################## Feature  Section Styling ###################### --> */
+
+/* gives paddding to our feature section */
+.feature{
+    padding:10rem 0rem;
+}
+.box_wrapper{
+    /* border: 2px solid green; */
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.493);/*horizontal -> vertical -> blur -> spread -> color*/
+}
+/*  */
+.box{
+    width: 33.3333333%;
+    float: left;
+    /* border: 2px solid black; */
+    padding: 2rem;
+    text-align: center;
+}
+
+/* since our paragrph moves out of the box-wrapper border so we need to clear our float */
+.box_wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* giving features to our boxess */
+.box1, .box3{
+    background-color: #263228;
+    color: #ffff;
+}
+.box2{
+    background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+    color: #ffff;
+}
+
+
+
+/*################################ Footer Section styling #################################### */
+
+/* styling our footer */
+.footer{
+    /* border:2px solid red; */
+    background-color: #263238;
+    color: #f4f4f4;
+    padding: 0rem;
+    text-align: center;
+}
+
+/* gives margin beteeen our social media icons */
+.social_media_links i{
+    margin:2rem;
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+/* gives color to our social meadia icons  */
+.twitter i:hover{
+    color: #91f5fc98;
+}
+.linkedin i:hover{
+    color: #0c95f0d8;
+}
+.fb i:hover{
+    color: #1814fa98;
+}
+.insta i:hover{
+    color: #f6575798;
+}
+
+
+
+
+/* ############################### About Page Styling  ################################## */
+
+.about{
+    padding: 5rem 0;
+}
+
+/* draw line using pseudo element */
+/* .about_heading::after{
+    content:"";
+    display: block;
+    border: 3px solid #e63946;
+    width: 100%;
+} */
+/* simple way to draw line */
+.about_heading{
+    border-bottom: 6px solid #ee4758;
+}
+
+
+/* ################################### About Wrapper Styling ####################### */
+
+.about_wrapper{
+    /* border: 2px solid black; */
+    text-align: center;
+    margin-top: 2rem;
+}
+.about_wrapper .left{
+    float: left;
+    width: 50%;
+}
+.about_wrapper .right{
+    float: right;
+    width: 50%;
+}
+
+/* clearing our floats */
+.about_wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+
+}
+
+/* providing tick() symmbol before the li class  */
+.about_wrapper li::before{
+    content: '\2713';
+    color: #f81266;
+    font-weight: bold;
+    display: inline-block;
+    padding-right: 1rem;
+
+}
+
+/*<!--########################  Counts part Styling ################################## -->  */
+.counts{
+    margin-top: 3rem;
+    /* border: 2px solid green; */
+}
+
+/* modifying our count item  */
+.count_item{
+    /* border: 2px solid red; */
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+/* modifying  our nos */
+.count_item span{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e63946;
+}
+/* modifying our paragraph */
+.count_item p{
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #555;
+}
+
+
+/* clearing our float */
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ###################### Banner Styling #################### */
+
+.banner{
+    background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+    color: #f4f4f4;
+    margin-top: 3rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px #b8b7b78a;
+}
+
+/* providing the text to the left part */
+.banner_left{
+    width: 60%;
+    float: left;
+
+}
+
+/* providing button to the right part */
+.banner_right{
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+
+/* modifying our text  */
+.banner_line{
+    font-weight: 700;
+    font-size: 1.65rem;
+    margin: 1.75rem;
+
+}
+
+/* modifying our button */
+.banner_button{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 0.3em 2.5em;
+    letter-spacing: 0.1rem;
+    color: #f4f4f4;
+}
+
+/* giving background color when we hover */
+.banner_right a:hover{
+    background: linear-gradient(25deg, hsla(339, 100%, 67%, 0.984), #ce1426d8 50%);
+}
+
+/* clearing our float */
+.banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/*<----- ##################### Contact Page Styling ###############################  -------> */
+
+/* padding for whole contact page */
+.contact_form{
+    padding: 5rem 0;
+    background-color: #dddbdb;
+    font-size: 1rem;
+}
+
+/* border for our convienece
+/* .form_wrapper{
+    /* border: 10px solid red;
+}*/
+.form_wrapper .compnay_address{
+    /* border :2px dotted black; */
+    height: 760px;
+    float: left;
+    width: 49%;
+    background: #ffff;
+}
+.form_wrapper .form{
+    /* border: 2px dotted brown; */
+    float: right;
+    width: 49%;
+    background: #ffff;
+}
+.address_group p{
+    text-transform: lowercase;
+}
+
+.form_wrapper .compnay_address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.form_wrapper .compnay_address h2{
+    display: inline-block;
+    /* margin-right: 1rem; */
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.form_wrapper .address_group{
+    margin: 2rem;
+}
+
+.form_wrapper img{
+    margin-left: 2rem;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+}
+
+/* modifying our image */
+.form_wrapper .compnay_address img{
+    max-width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: right;
+}
+
+.form_wrapper .compnay_address{
+    line-height: 0.7;
+}
+
+/* ########################### form stying ######################### */
+.form p{
+    text-transform: lowercase;
+    padding: 0.4rem;
+}
+
+.form_wrapper .form{
+    height: 760px;
+    font-size: 1.6rem;
+    background: #fff;
+    /* border: 4px dotted black; */
+    width: 49%;
+    float: right;
+    padding: 1rem;
+}
+
+/* giving border to heading  */
+
+.form h1{
+    border-bottom:6px solid #e63946 ;
+}
+.form_wrapper .form label{
+    display: block;
+}
+.form_wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+
+}
+
+.form_wrapper .form .form_group{
+    margin-bottom: 1.2rem;
+
+}
+
+
+.form_wrapper .form label::after{
+    content: '* ';
+    color: red;
+}
+
+.form_wrapper .form textarea{
+    width: 100%;
+    height: 200px;
+    padding: 1rem;
+}
+
+
+/* Style our button */
+
+.form_button{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #e63946 ;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.form_button:hover{
+    background: rgba(90, 90, 89, 0.952);
+    box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* clearing our float */
+.form_wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}

@@ -1,0 +1,57 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightcyan;
+}
+
+h1{
+    font-size: 10rem;
+}
+p{
+    font-size: 5rem;
+}
+
+
+/* ########################## Applying Media Query ###############################*/
+
+/* Warning : Meadia Query must be use below our all css code */
+
+
+@media(max-width:500px){ /*media query apply when width ranges below 500px i.e breakPoint */
+    html{
+        font-size: 5px; /* heading 10 rem == 50px   and  paragraph 5rem == 25 px */
+    }
+    body{
+        background: lightcoral;
+    }
+}
+
+/* one more example to illustrat media query */
+
+@media(min-width:501px) and (max-width:768px){/*media query apply when width ranges between  501px to 768 px*/
+    body{
+        background-color: lightgoldenrodyellow;
+    }
+}
+
+@media(min-width:769px) and (max-width:1086px){/*media query apply when width ranges between  769px to 1086 px*/
+    body{
+        background-color: pink;
+    }
+}
+
+@media(min-width:1087px) and (max-width:1200px){/*media query apply when width ranges between  1087px to 1200 px*/
+    body{
+        background-color: rgb(185, 56, 77);
+    }
+}
+
+/* media query to work for desktop */
+@media(min-width:1201px){
+    body{
+        background: lightblue;
+    }
+}

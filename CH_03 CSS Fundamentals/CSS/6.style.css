@@ -1,0 +1,18 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*############################ Utility classes ##################  */
+
+.text-red{
+    color:rgb(241, 88, 88);
+}
+.text-green{
+    color:rgb(109, 245, 109);
+}
+.bk-ground{
+    background-color: rgb(172, 236, 119);
+}
+.bak-ground{
+    background-color: aqua;
+}

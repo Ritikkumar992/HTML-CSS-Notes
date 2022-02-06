@@ -1,0 +1,30 @@
+h1{
+    color: red;
+}
+.h1class{
+    color: blue;
+}
+#h1id{
+    color: green;
+}
+#h1id{
+    color: green !important;
+}
+span{
+    color: red;
+}
+
+h2{
+    color: rgb(7, 230, 26);
+}
+
+#h2id{
+    color:cornflowerblue
+}
+.heading{
+    color: rgb(125, 8, 243);
+}
+.h2class{
+    color: rgb(5, 5, 5);
+}
+/* if specificity collides with classes then those which comes at the end gets the higher preference */

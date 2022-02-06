@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Roboto:ital,wght@0,100;0,300;1,100;1,400;1,900&family=Vujahday+Script&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    color: green;
+    /* background-color: bisque; */
+}
+.content{
+    background-color: bisque;
+}
+.color{
+    background-color: beige;
+}

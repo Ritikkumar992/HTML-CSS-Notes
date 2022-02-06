@@ -1,0 +1,39 @@
+body{
+    color:rgb(34, 33, 33);
+    padding: 0px 40px;
+}
+nav{
+    background-color: #cecece;
+    /* border: 2px solid red; */
+}
+nav ul{
+    /* border: 2px solid green; */
+    padding-left: 0px;
+    text-align:center;
+    /* background-color: yellow; */
+    
+}
+nav li{
+    list-style: none; /* it is used to remove (.) from the begining of the list */
+    display: inline-block; /*it convert block line to inline-block*/
+    border-bottom: 1px solid black;
+    margin:15px 20px;
+    font-size: 20px;
+    text-transform: uppercase; /*convert lowercase letter to uppercase */
+    /* background-color:blue ; */
+}
+
+a{
+    color: #444; /*used to override the default value of link color*/
+    text-decoration: none;/* used to remove the link decoration */
+}
+
+section {
+    margin-top: 50px;
+}
+h1,h2,h3{
+    color: #222;
+}
+h2{
+    border-bottom: 1px solid #444;
+}

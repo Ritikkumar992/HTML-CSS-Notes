@@ -1,0 +1,15 @@
+/* we use single : for classes and :: for elements */
+p::first-letter{
+    font-size: 32px; /* it increases the first letter of every paragraph */
+}
+p::first-line{
+    font-size: 32px; /* it increases the first line::first-line of every paragraph */
+}
+
+/* This will create effect if we select the paragraph  */
+p::selection{
+    background: black;/*it changes the background color of paragraph */
+    color: white;
+}
+
+/* Note: first letter and first line Pseudo Elements works with Block Level Element only  */

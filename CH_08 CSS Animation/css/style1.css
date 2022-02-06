@@ -1,0 +1,45 @@
+/* change the style of our box using css animation  */
+.box1{
+    height: 400px;
+    width: 400px;
+    background: red;
+    
+    animation-name: change-bg-color;   /*we can give any animation-name.*/
+    animation-duration: 5s; /*it decides the time taken to change the req animation */
+    animation-delay: 3s; /* to delay the animation */
+    animation-iteration-count: 3;/* to repeat the animation process for some iteration*/
+    animation-fill-mode: forwards; /*it enforces to block the animation at the 'to' stage*/
+    
+}
+/*key frame decide the behaviour at that particular time */
+@keyframes change-bg-color{
+    from{
+        background: red;
+    }
+    to{
+        background:yellow;
+    }
+}
+
+
+.box2{
+    width: 15px;
+    height: 10px;
+    background: blue;
+
+    animation-name: grow-width;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+    animation-direction: reverse; /*reverse the direction of our animation */
+
+}
+
+@keyframes grow-width{
+    from{
+        width: 0;
+    }
+    to{
+        width: 300px;
+    }
+}

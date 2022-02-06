@@ -1,0 +1,11 @@
+/* font-weight : used to change the width of our font */
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}

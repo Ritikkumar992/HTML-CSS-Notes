@@ -1,0 +1,13 @@
+/* first child pseudo class */
+/* ager koi p apne parents ka last child hua to uska color kr denge red. */
+/* child point of view */
+
+p:last-child{
+    color: red;
+}
+/*last paragraph always gets color  */
+
+/* parent point of view */
+p:last-of-type{
+    color: rgb(60, 255, 0);
+} 

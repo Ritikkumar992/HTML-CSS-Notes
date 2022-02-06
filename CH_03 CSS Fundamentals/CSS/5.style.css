@@ -1,0 +1,15 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+div{
+    background-color: rgb(18, 191, 248);
+}
+.main_heading{
+    background-color: lightcoral;
+}
+.main_section{
+    background-color: lightgreen;
+}
+p{
+    color:rgba(0, 0, 0, 0.993);
+}

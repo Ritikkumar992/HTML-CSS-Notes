@@ -1,0 +1,21 @@
+/*
+a{
+    border: 3px solid red;
+    /* margin and padding are not followed properly in top and bottom  
+    margin: 50px;
+    padding: 50px;
+    /* we can't modify the height and width of our inline element. 
+    height: 100px;
+    width: 100px;
+}
+*/
+
+/* To resolve the above issues with inline method we use inline-block element */
+a{
+    border: 2px solid rgb(8, 32, 248);
+    display: inline-block;
+    width: 100px; /*We can modify our height and width in our inline block*/
+    height: 100px;
+    margin: 50px; /*space outside the border*/
+    padding: 50px; /*distance between content and border */
+}

@@ -1,0 +1,19 @@
+p{
+    font-size:16px; /*default font-size*/
+    font-size:32px; /* font-size becomes 32px*/
+    font-size:96px; /* font-size becomes 96px*/
+
+    /* 1 inch == 96px */
+    font-size: 1in;/* font-size becomes 96px*/
+
+    /* 1 inch == 2.54 cm */
+    font-size: 2.54cm;/* font-size becomes 96px*/
+
+    /* 1 px == 0.75pt */
+    /* 16px == 0.75*16 = 12pt */
+    font-size: 16px;
+    font-size: 12pt;
+
+    border: 3px ridge green;
+}
+

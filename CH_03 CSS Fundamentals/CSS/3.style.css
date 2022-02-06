@@ -1,0 +1,14 @@
+h1{
+    color: blueviolet;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Neonderthaw&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;1,100;1,400;1,900&family=Rock+3D&family=Rubik+Beastly&family=Vujahday+Script&display=swap'); */
+
+/* *{
+    font-family: 'Rubik Beastly', cursive;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@300;400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;1,100;1,400;1,900&family=Rock+3D&family=Rubik+Beastly&family=Vujahday+Script&display=swap');
+
+*{
+    font-family: 'Vujahday Script', cursive
+}

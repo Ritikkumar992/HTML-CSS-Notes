@@ -1,0 +1,25 @@
+h1{
+    background-color: lightblue;
+    /* text-align: center; */
+    width: 500px;
+    text-align: center;
+    text-align: right;
+    padding: 10px;
+    
+}
+/* a{
+    background-color: lightblue;
+    text-align: center; /*it doesn't move to centre bcz inline element has only that particular
+    amount of width that is required for it.
+}
+ if we change the above piece of code in block level element then we can move it to the centre */
+a{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    text-align: center;
+}
+div{
+    text-align: center;
+}
